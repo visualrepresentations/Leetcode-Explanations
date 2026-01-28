@@ -1,0 +1,49 @@
+# Explanation of 17
+
+## Summary
+
+<p> Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.<br>
+A mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters. </p>
+
+## Constraints 
+
+<p>1 <= digits.length <= 4<br>
+digits[i] is a digit in the range ['2', '9'].</p>
+
+## Intuition
+
+
+
+## Approach
+
+
+
+## Data Structures Used 
+
+Recursive structure through recursiveCombinations
+Hashmap to map the "digits" integers to their corresponding alphabet string
+Integer index to make sure that we use all digits
+
+## Operations & Behavior Summary 
+
+
+
+## Complexity Solution 
+
+
+
+## Further explanation 
+
+
+
+## Line by line 
+
+List<String> result = new ArrayList<>();
+
+
+## Edge cases 
+
+
+
+## Further notes
+
