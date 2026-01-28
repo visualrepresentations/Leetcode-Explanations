@@ -1,1 +1,14 @@
 # Leetcode-Explanations
+Template 
+Summary
+Constraints
+Intuition
+Approach
+Data Structures Used
+Operations & Behavior Summary
+Complexity
+Solution
+Further explanation
+Line by line
+Edge cases
+Further notes
