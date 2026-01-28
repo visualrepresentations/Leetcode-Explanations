@@ -14,13 +14,13 @@
 
 ## Summary
 
-Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.
-A mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters. 
+- Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.
+- A mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters. 
 
 ## Constraints 
 
-1 <= digits.length <= 4
-digits[i] is a digit in the range ['2', '9'].
+- 1 <= digits.length <= 9
+- digits[i] is a digit in the range ['2', '9'].
 
 ## Intuition
 
@@ -33,16 +33,16 @@ In terms of boilerplate, in order to have efficient lookup, we can use a hashmap
 
 ## Data Structures Used 
 
-Recursive structure through recursiveCombinations
-Hashmap to map the "digits" integers to their corresponding alphabet string
-Integer index to make sure that we use all digits
-String builder to more easily build a string. 
+- Recursive structure through recursiveCombinations
+- Hashmap to map the "digits" integers to their corresponding alphabet string
+- Integer index to make sure that we use all digits
+- String builder to more easily build a string. 
 
-## Complexity Solution 
+ ## Complexity Solution 
 
-Hashmap lookup O(1)
-Recursion O(4^n), in the worst case solution we'll have 4 different choices to index into with a digit length of n.
-Space complexity: O(h), where h is the length of digits, at the highest usage point we'll have h calls of recursiveCombinations on our stack
+- Hashmap lookup O(1)
+- Recursion O(4^n), in the worst case solution we'll have 4 different choices to index into with a digit length of n.
+- Space complexity: O(h), where h is the length of digits, at the highest usage point we'll have h calls of recursiveCombinations on our stack
 
 ## Further explanation 
 ### Psuedo code
@@ -86,13 +86,13 @@ for (letter in letters) {
 }
 
 ## Edge cases to consider
-Whether or not the input can be null or some other malformed,
-eg non digits.
-If it is empty, what should the return behaviour be?
-If you do have an invalid input, do you skip it or throw an error altogether?
-Does output order matter?
-What's the maximum length of digits?
-Digits outside of current range ie. 2< or >=10 -> is wraps if this happens, given that we hardcode in the definitions.
+- Whether or not the input can be null or some other malformed,
+- eg non digits.
+- If it is empty, what should the return behaviour be?
+- If you do have an invalid input, do you skip it or throw an error altogether?
+- Does output order matter?
+- What's the maximum length of digits?
+- Digits outside of current range ie. 2< or >=10 -> is wraps if this happens, given that we hardcode in the definitions.
 
 ## Further notes
 If letterCombinations is called multiple times, it might be logical to have a global hashmap so that we don't need to repeatedly create and initialise a hashmap.
